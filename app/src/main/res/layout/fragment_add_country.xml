@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B3840"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="#35313A">
+
+        <View
+            android:layout_width="268dp"
+            android:layout_height="128dp"
+            android:layout_margin="30dp"
+            android:background="#26242B"
+            android:foreground="@drawable/countries"
+            android:padding="20dp">
+
+        </View>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_country_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#3F3A47"
+        android:hint="Country Name:"
+        android:textColor="#FFEEE6"
+        android:textColorHint="#FFE2D6"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_country_capital"
+        android:background="#3F3A47"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textColorHint="#FFE2D6"
+        android:textColor="#FFEEE6"
+        android:layout_height="wrap_content"
+        android:hint="Country Capital:" />
+
+    <EditText
+        android:id="@+id/et_country_region"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#3F3A47"
+        android:textColor="#FFEEE6"
+        android:layout_margin="10dp"
+        android:textColorHint="#FFE2D6"
+        android:layout_height="wrap_content"
+        android:hint="Country Region:" />
+
+    <EditText
+        android:id="@+id/et_country_currency"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#3F3A47"
+        android:layout_margin="10dp"
+        android:textColorHint="#FFE2D6"
+        android:textColor="#FFEEE6"
+        android:layout_height="wrap_content"
+        android:hint="Country Currency:" />
+
+    <EditText
+        android:id="@+id/et_country_language"
+        android:layout_width="match_parent"
+        android:background="#3F3A47"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFE2D6"
+        android:textColor="#FFEEE6"
+        android:hint="Country Language:" />
+
+    <EditText
+        android:id="@+id/et_country_flag_url"
+        android:layout_width="365dp"
+        android:layout_height="51dp"
+        android:layout_margin="10dp"
+        android:background="#3F3A47"
+        android:hint="Country Flag URL:"
+        android:paddingBottom="30dp"
+        android:textColor="#FFEEE6"
+        android:textColorHint="#FFE2D6"
+        android:textSize="15dp"
+        android:textStyle="" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_country"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Country" />
+
+</LinearLayout>

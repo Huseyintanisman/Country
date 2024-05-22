@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/country_navigation"
+    app:startDestination="@id/countryFeedFragment">
+
+    <fragment
+        android:id="@+id/countryFeedFragment"
+        android:name="com.example.myapplication.view.CountryFeedFragment"
+        android:label="fragment_country_feed"
+        tools:layout="@layout/fragment_country_feed" >
+        <action
+            android:id="@+id/action_countryFeedFragment_to_countryDetailsFragment"
+            app:destination="@id/countryDetailsFragment" />
+        <action
+            android:id="@+id/action_countryFeedFragment_to_addCountryFragment"
+            app:destination="@id/addCountryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryDetailsFragment"
+        android:name="com.example.myapplication.view.CountryDetailsFragment"
+        android:label="fragment_country_details"
+        tools:layout="@layout/fragment_country_details" >
+        <action
+            android:id="@+id/action_countryDetailsFragment_to_countryFeedFragment"
+            app:destination="@id/countryFeedFragment" />
+        <argument
+            android:name="countryUuid"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCountryFragment"
+        android:name="com.example.myapplication.view.AddCountryFragment"
+        android:label="AddCountryFragment" >
+        <action
+            android:id="@+id/action_addCountryFragment_to_countryFeedFragment"
+            app:destination="@id/countryFeedFragment" />
+    </fragment>
+</navigation>

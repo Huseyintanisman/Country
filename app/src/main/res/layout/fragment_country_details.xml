@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".view.CountryDetailsFragment">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="-3dp"
+        android:background="#3C3A6A"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="326dp"
+        android:layout_marginEnd="0dp"
+        android:background="#3C3A6A"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="371dp"
+        android:layout_marginEnd="0dp"
+        android:background="#3C3A6A"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="417dp"
+        android:layout_marginEnd="6dp"
+        android:background="#3C3A6A"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="477dp"
+        android:layout_marginEnd="-3dp"
+        android:background="#3C3A6A"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/countryImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher_round"
+        android:minHeight="200dp">
+    </ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="0dp"
+        android:background="#3C3A6A"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_margin="10dp"
+        android:text="CountryName"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryImage">
+    </TextView>
+    <TextView
+        android:id="@+id/countryCapital"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+
+        android:text="CountryCapital"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryName">
+    </TextView>
+    <TextView
+        android:id="@+id/countryRegion"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:text="CountryRegion"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryCapital">
+    </TextView>
+    <TextView
+        android:id="@+id/countryCurrency"
+        android:layout_margin="10dp"
+        android:text="CountryCurrency"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryRegion">
+    </TextView>
+    <TextView
+        android:id="@+id/countryLanguage"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:text="CountryLanguage"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryCurrency">
+    </TextView>
+
+</RelativeLayout>
+
